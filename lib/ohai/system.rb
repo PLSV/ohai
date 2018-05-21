@@ -73,6 +73,9 @@ module Ohai
       @data[key]
     end
 
+    # load and run all plugins
+    #
+    # @return [void]
     def all_plugins(attribute_filter = nil)
       # Reset the system when all_plugins is called since this function
       # can be run multiple times in order to pick up any changes in the
